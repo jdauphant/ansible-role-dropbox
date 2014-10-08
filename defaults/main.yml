@@ -1,0 +1,6 @@
+---
+# Package states: installed or latest
+dropbox_version: "1.6.2"
+dropbox_tmp_deb: "/tmp/vagrant_{{dropbox_version}}.deb"
+dropbox_tmp_rpm: "/tmp/vagrant_{{dropbox_version}}.rpm"
+
