@@ -1,0 +1,7 @@
+---
+- name: Install dropbox package repo
+  copy: src=dropbox.repo dest=/etc/yum.repos.d/dropbox.repo
+
+- name: Install dropbox for Fedora OS family
+  dnf: name=nautilus-dropbox state=present
+  tags: ["packages","dropbox"]

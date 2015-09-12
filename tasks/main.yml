@@ -3,3 +3,8 @@
   include: "Ubuntu.yml"
   when: ansible_distribution == 'Ubuntu'
   tags: ["packages","dropbox"]
+
+- name: install dropbox for Fedora family
+  include: "Fedora.yml"
+  when: ansible_distribution == 'Fedora'
+  tags: ["packages","dropbox"]

@@ -1,5 +1,5 @@
 ---
-- name: Download dropbox
+- name: Download dropbox .deb
   get_url: url={{ dropbox_url_ubuntu_deb }} dest={{dropbox_tmp_deb}}
   tags: ["packages","dropbox"]
 
