@@ -1,0 +1,13 @@
+---
+- name: Install Fedora dropbox package repo
+  copy: src=dropbox.repo
+        dest=/etc/yum.repos.d/dropbox.repo
+  when: ansible_distribution_version|int <= dropbox_fedora_max_releasever
+
+- name: Install Fedora dropbox package repo (fallback)
+  copy: src=dropbox.repo.f{{dropbox_fedora_max_releasever}}
+        dest=/etc/yum.repos.d/dropbox.repo
+  when: ansible_distribution_version|int > dropbox_fedora_max_releasever
+
+- name: Install Fedora dropbox package
+  dnf: name=nautilus-dropbox state=present

@@ -2,4 +2,5 @@
 dropbox_architecture: "{% if ansible_architecture == 'x86_64' %}amd64{% else %}i386{% endif %}"
 dropbox_url_ubuntu_deb: "https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_{{dropbox_version}}_{{dropbox_architecture}}.deb"
 dropbox_url_debian_deb: "https://www.dropbox.com/download?dl=packages/debian/dropbox_{{dropbox_version}}_{{dropbox_architecture}}.deb"
-dropbox_url_rpm: "https://www.dropbox.com/download?dl=packages/fedora/nautilus-dropbox-{{dropbox_version}}-1.fedora.{{ansible_architecture}}.rpm"
+
+dropbox_fedora_max_releasever: 22
