@@ -11,4 +11,3 @@
 
 - name: Install Fedora dropbox package
   dnf: name=nautilus-dropbox state=present
-  tags: ["packages","dropbox"]
