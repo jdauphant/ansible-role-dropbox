@@ -1,8 +1,8 @@
 ---
-- name: Download dropbox package for Ubuntu
+- name: Download Ubuntu dropbox package
   get_url: url={{ dropbox_url_ubuntu_deb }} dest={{dropbox_tmp_deb}}
   tags: ["packages","dropbox"]
 
-- name: Install dropbox for Debian OS family
+- name: Install Ubuntu dropbox package
   apt: deb={{dropbox_tmp_deb}}
   tags: ["packages","dropbox"]
