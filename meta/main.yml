@@ -81,8 +81,8 @@ galaxy_info:
   # Below are all categories currently available. Just as with
   # the platforms above, uncomment those that apply to your role.
   #
-  categories:
-  #- cloud
+  galaxy_tags:
+  - cloud
   #- cloud:ec2
   #- cloud:gce
   #- cloud:rax
@@ -93,6 +93,6 @@ galaxy_info:
   #- monitoring
   #- networking
   #- packaging
-  #- system
+  - system
   #- web
 dependencies: []
