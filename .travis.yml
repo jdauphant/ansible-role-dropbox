@@ -11,3 +11,5 @@ script:
   - echo localhost > inventory
   - ansible-playbook -i inventory --syntax-check --list-tasks test.yml
   - ansible-playbook -i inventory --connection=local --sudo -vvvv test.yml
+notifications:
+    webhooks: https://galaxy.ansible.com/api/v1/notifications/
