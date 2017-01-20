@@ -15,7 +15,7 @@ $ sudo ansible-galaxy install jdauphant.dropbox
 
 # Examples
 
-## Install Sublime Text
+## Install Dropbox
 
 ```yaml
 - hosts: all
